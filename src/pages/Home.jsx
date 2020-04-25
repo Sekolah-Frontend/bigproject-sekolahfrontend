@@ -1,10 +1,10 @@
 import React from 'react';
-import TwoColumn from '../layout/TwoColumn';
+import '../assets/sass/Bulma.scss';
 
 const Home = () => {
   return (
     <>
-      <TwoColumn></TwoColumn>
+      <div>isi</div>
     </>
   );
 };

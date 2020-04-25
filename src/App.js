@@ -1,11 +1,10 @@
 import React from 'react';
-import Home from './pages/Home';
+import OneColumn from './layout/OneColumn';
+
 function App() {
   return (
     <div className='App'>
-      <header className='App-header'>
-        <Home />
-      </header>
+      <OneColumn></OneColumn>
     </div>
   );
 }
