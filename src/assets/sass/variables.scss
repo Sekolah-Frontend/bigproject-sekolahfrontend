@@ -28,6 +28,7 @@ $blue: hsl(206, 72%, 47%) !default;
 $purple: hsl(271, 100%, 71%) !default;
 $red: hsl(360, 100%, 44%) !default;
 $light-yellow: hsl(56, 25%, 100%) !default;
+$light-orange: #f67b29;
 // 16px based font size
 $size-1: 2rem !default; // 32px
 $size-2: 1.75rem !default; // 28px
@@ -58,11 +59,13 @@ $warning: $yellow !default;
 $danger: $red !default;
 $light: $white-ter !default;
 $dark: $grey-darker !default;
+// $orange: $light-orange !default;
 // Link
 $link: $primary !default;
 $link-hover: darken($success, 15%) !default;
 // Update Bulma's global variables
-$family-sans-serif: 'Open Sans', sans-serif;
+$family-sans-serif: 'Open Sans',
+sans-serif;
 $widescreen-enabled: false;
 $fullhd-enabled: false;
 // Body

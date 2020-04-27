@@ -1,11 +1,26 @@
 import React from 'react';
-import OneColumn from './layout/OneColumn';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+// style
+// components
+import Header from './components/header/Header'
+import Footer from './components/footer/Footer'
+// pages
+import Home from './pages/home/Home'
+import BookDetail from './pages/books/BookDetail'
+
 
 function App() {
   return (
-    <div className='App'>
-      <OneColumn></OneColumn>
-    </div>
+    <>
+      <Router>
+        <Header></Header>
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/books/:id" component={BookDetail}/>
+        </Switch>
+        <Footer></Footer>
+      </Router>
+    </>
   );
 }
 

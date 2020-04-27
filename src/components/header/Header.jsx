@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/sass/Bulma.scss';
+import { NavLink } from 'react-router-dom'
 
 export default function Header() {
   return (
@@ -20,9 +20,9 @@ export default function Header() {
 
           <div id='navbarBasicExample' className='navbar-menu'>
             <div className='navbar-start'>
-              <a className='navbar-item'>Home</a>
+              <NavLink to="/" className='navbar-item'>Home</NavLink>
 
-              <a className='navbar-item'>Documentation</a>
+              <NavLink to="/books/2" className='navbar-item'>BookDetail</NavLink>
 
               <div className='navbar-item has-dropdown is-hoverable'>
                 <a className='navbar-link'>More</a>
