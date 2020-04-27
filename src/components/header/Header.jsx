@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom';
 
 export default function Header() {
   return (
@@ -7,8 +7,8 @@ export default function Header() {
       <div className='container is-fullhd'>
         <nav className='navbar' role='navigation' aria-label='main navigation'>
           <div className='navbar-brand'>
-            <a className='navbar-item' href='https://bulma.io'>
-              {/* <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"> */}
+            <a className='navbar-item' href='#'>
+              <img src={`${process.env.PUBLIC_URL}/image/logoCilsy/Cilsyplus..png`} />
             </a>
 
             <a role='button' className='navbar-burger burger' aria-label='menu' aria-expanded='false' data-target='navbarBasicExample'>
@@ -20,9 +20,13 @@ export default function Header() {
 
           <div id='navbarBasicExample' className='navbar-menu'>
             <div className='navbar-start'>
-              <NavLink to="/" className='navbar-item'>Home</NavLink>
+              <NavLink to='/' className='navbar-item'>
+                Home
+              </NavLink>
 
-              <NavLink to="/books/2" className='navbar-item'>BookDetail</NavLink>
+              <NavLink to='/books/2' className='navbar-item'>
+                BookDetail
+              </NavLink>
 
               <div className='navbar-item has-dropdown is-hoverable'>
                 <a className='navbar-link'>More</a>
