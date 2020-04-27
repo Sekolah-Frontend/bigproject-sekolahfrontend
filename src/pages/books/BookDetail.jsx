@@ -24,6 +24,39 @@ const BookDetail = (props) => {
               <img src={`${process.env.PUBLIC_URL}/image/rating-black/star.png`} /> 4.9 (1.121 ratings by Goodreads)
             </div>
           </div>
+          <hr />
+          <div className='columns'>
+            <div className='column is-3 has-text-weight-bold'>Quantity</div>
+            <div className='column'>
+              <input type='number' className='input qty' />6 peace available
+            </div>
+          </div>
+          <div className='columns'>
+            <div className='column is-3 has-text-weight-bold'>Shipping Charges</div>
+            <div className='column'>
+              to
+              <div className='select'>
+                <select>
+                  <option>Jakarta,Cengkareng</option>
+                  <option>Jakarta,lenteng agung</option>
+                </select>
+              </div>
+              <br />
+              from Surabaya <br />
+              Fee Rp 15.000-24.000
+            </div>
+          </div>
+          <div className='columns'>
+            <div className='column'>
+              <button className='button margin-r-20'>
+                <span className='icon'>
+                  <i className='fas fa-heart'></i>
+                </span>
+              </button>
+              <button className='button margin-r-20 is-outlined'>add to cart</button>
+              <button className='button is-primary'>buy now</button>
+            </div>
+          </div>
         </div>
       </div>
       <h1>Book Detail {match.params.id} </h1>
