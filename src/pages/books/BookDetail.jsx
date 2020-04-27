@@ -10,21 +10,20 @@ const BookDetail = (props) => {
       <Breadcrumb />
       <div className='columns'>
         <div className='column'>
-          <img className='book-detail-image' src={require('../../assets/images/book-detail/2.png')} alt='' />
+          <img className='book-detail-image' src={`${process.env.PUBLIC_URL}/image/listBook/2@2x.png`} alt='' />
         </div>
         <div className='column'>
           <h3 className='is-size-1'>Steal Like an Artist</h3>
           <h3 className='is-size-4'>Austin Kleon</h3>
           <div className='columns'>
             <div className='column'>
-              <img src={require('../../assets/images/rating/star.png')} />
-              <img src={require('../../assets/images/rating/star.png')} />
-              <img src={require('../../assets/images/rating/star.png')} />
-              <img src={require('../../assets/images/rating/star.png')} />
-              <img src={require('../../assets/images/rating/star-half.png')} /> 4.9 (1.121 ratings by Goodreads)
+              <img src='/image/rating-black/star.png' />
+              <img src={`${process.env.PUBLIC_URL}/image/rating-black/star.png`} />
+              <img src={`${process.env.PUBLIC_URL}/image/rating-black/star.png`} />
+              <img src={`${process.env.PUBLIC_URL}/image/rating-black/star.png`} />
+              <img src={`${process.env.PUBLIC_URL}/image/rating-black/star.png`} /> 4.9 (1.121 ratings by Goodreads)
             </div>
           </div>
-          <h3 className='is-size-1 has-text-weight-bold text-orange'>Rp142.000</h3>
         </div>
       </div>
       <h1>Book Detail {match.params.id} </h1>
