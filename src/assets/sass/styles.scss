@@ -42,41 +42,42 @@
       text-align: left;
       color: #4c5bdf;
     }
-.custom-header {
-  padding: 0;
-  height: 80px;
-  box-shadow: 0 6px 12px 0 rgba(96, 96, 96, 0.25);
-  background-color: #ffffff;
-
-  .container {
+  }
+  .custom-header {
+    padding: 0;
     height: 80px;
+    box-shadow: 0 6px 12px 0 rgba(96, 96, 96, 0.25);
+    background-color: #ffffff;
 
-    .navbar {
+    .container {
       height: 80px;
-    }
-  }
 
-  .navbar-menu {
-    .navbar-start {
-      width: 75%;
-
-      .left-item {
-        width: 35%;
-      }
-      .right-item {
-        width: 65%;
+      .navbar {
+        height: 80px;
       }
     }
-    .navbar-end {
-      width: 25%;
+
+    .navbar-menu {
+      .navbar-start {
+        width: 75%;
+
+        .left-item {
+          width: 35%;
+        }
+        .right-item {
+          width: 65%;
+        }
+      }
+      .navbar-end {
+        width: 25%;
+      }
     }
-  }
-  .vertical-line {
-    border-left: 2px solid grey;
-    height: 30px;
+    .vertical-line {
+      border-left: 2px solid grey;
+      height: 30px;
+    }
   }
 }
-
 .footer {
   width: 1440px;
   height: 380px;
