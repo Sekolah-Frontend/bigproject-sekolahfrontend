@@ -18,6 +18,15 @@ const Home = () => {
         <CategoriesPopular categorie='Novel'></CategoriesPopular>
         <CategoriesPopular categorie='Computer Science'></CategoriesPopular>
       </div>
+
+      <div className='container'>
+        <h3 className='categories-font'>Best Selling Novel Books</h3>
+      </div>
+      <div className='container columns'></div>
+      <div className='container'>
+        <h3 className='categories-font'>Best Selling Food and Drinks Books</h3>
+      </div>
+      <div className='container columns'></div>
     </>
   );
 };
