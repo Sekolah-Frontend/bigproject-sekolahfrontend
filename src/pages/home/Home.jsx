@@ -8,7 +8,16 @@ const Home = () => {
       <div className='container'>
         <Carousel />
       </div>
-      <CategoriesPopular />
+      <div className='container'>
+        <h3 className='categories-font'>Popular Categories</h3>
+      </div>
+
+      <div className='container columns'>
+        <CategoriesPopular categorie='Self Development'></CategoriesPopular>
+        <CategoriesPopular categorie='Engineering'></CategoriesPopular>
+        <CategoriesPopular categorie='Novel'></CategoriesPopular>
+        <CategoriesPopular categorie='Computer Science'></CategoriesPopular>
+      </div>
     </>
   );
 };
