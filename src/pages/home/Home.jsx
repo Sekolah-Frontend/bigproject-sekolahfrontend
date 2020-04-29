@@ -4,7 +4,7 @@ import CategoriesPopular from '../../components/categories/CategoriesPopular';
 
 const Home = () => {
   return (
-    <>
+    <React.Fragment>
       <div className='container'>
         <Carousel />
       </div>
@@ -27,7 +27,7 @@ const Home = () => {
         <h3 className='categories-font'>Best Selling Food and Drinks Books</h3>
       </div>
       <div className='container columns'></div>
-    </>
+    </React.Fragment>
   );
 };
 
