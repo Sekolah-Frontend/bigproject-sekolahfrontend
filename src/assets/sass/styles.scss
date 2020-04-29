@@ -42,3 +42,24 @@
     height: 30px;
   }
 }
+
+.footer {
+  width: 1440px;
+  height: 380px;
+  background-color: #959ddf;
+
+  h4,
+  li {
+    line-height: 1.25;
+    color: #ffffff;
+    font-family: sans-serif;
+  }
+
+  h4 {
+    font-weight: bold;
+  }
+  li {
+    font-weight: normal;
+    margin: 15px;
+  }
+}
