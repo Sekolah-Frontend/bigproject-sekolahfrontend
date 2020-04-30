@@ -1,12 +1,13 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import Breadcrumb from '../../components/breadcrumb/Breadcrumb';
+import BookInfo from '../../components/bookInfo/BookInfo';
 
 const BookDetail = (props) => {
   console.log(props);
   const { match } = props;
   return (
-    <div class='container is-fullhd'>
+    <div className='container is-fullhd'>
       <Breadcrumb />
       <div className='columns'>
         <div className='column'>
@@ -36,14 +37,14 @@ const BookDetail = (props) => {
             <div className='column'>
               to
               <div className='select'>
-                <select>
+                <select className='has-text-weight-bold'>
                   <option>Jakarta,Cengkareng</option>
                   <option>Jakarta,lenteng agung</option>
                 </select>
               </div>
               <br />
               from Surabaya <br />
-              Fee Rp 15.000-24.000
+              Fee Rp 15.000-Rp 24.000
             </div>
           </div>
           <div className='columns'>
@@ -57,6 +58,8 @@ const BookDetail = (props) => {
               <button className='button is-primary'>buy now</button>
             </div>
           </div>
+          <hr />
+          <BookInfo />
         </div>
       </div>
       <h1>Book Detail {match.params.id} </h1>
