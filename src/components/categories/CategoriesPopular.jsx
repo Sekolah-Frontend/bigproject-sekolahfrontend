@@ -6,6 +6,9 @@ export default function CategoriesPopular(props) {
       <div>
         <div className=' rectangle-85 column'>
           <h3 className='self-Development'>{props.categorie}</h3>
+
+          <br />
+          <img className='line' src={props.line} />
         </div>
       </div>
     </>

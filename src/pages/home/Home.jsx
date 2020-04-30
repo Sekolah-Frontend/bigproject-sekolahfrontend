@@ -13,10 +13,10 @@ const Home = () => {
       </div>
 
       <div className='container columns'>
-        <CategoriesPopular categorie='Self Development'></CategoriesPopular>
-        <CategoriesPopular categorie='Engineering'></CategoriesPopular>
-        <CategoriesPopular categorie='Novel'></CategoriesPopular>
-        <CategoriesPopular categorie='Computer Science'></CategoriesPopular>
+        <CategoriesPopular categorie='Self Development' line='/image/Line1.png' />
+        <CategoriesPopular categorie='Engineering' line='/image/Line2.png' />
+        <CategoriesPopular categorie='Novel' line='/image/Line3.png' />
+        <CategoriesPopular categorie='Computer Science' line='/image/Line4.png' />
       </div>
 
       <div className='container'>
