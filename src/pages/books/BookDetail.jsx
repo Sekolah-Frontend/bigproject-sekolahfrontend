@@ -1,13 +1,13 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import Breadcrumb from '../../components/breadcrumb/Breadcrumb';
-import BookInfo from '../../components/bookInfo/BookInfo';
+import BookInfo from '../../../src/components/book-info/BookInfo';
 
 const BookDetail = (props) => {
   console.log(props);
   const { match } = props;
   return (
-    <div className='container is-fullhd'>
+    <div className='container'>
       <Breadcrumb />
       <div className='columns'>
         <div className='column'>
@@ -58,9 +58,11 @@ const BookDetail = (props) => {
               <button className='button is-primary'>buy now</button>
             </div>
           </div>
-          <hr />
-          <BookInfo />
         </div>
+      </div>
+      <div className='container'>
+        <hr />
+        <BookInfo />
       </div>
       <h1>Book Detail {match.params.id} </h1>
     </div>

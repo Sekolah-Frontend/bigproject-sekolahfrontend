@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import clsx from 'clsx';
-import ProductDescription from './ProductDescription';
-import ProductDetail from './ProductDetail';
+import ProductDescription from '../ProductDescription';
+import ProductDetail from '../ProductDetail';
 
 const BookInfo = () => {
   const [tabIndex, setTabIndex] = useState(0);
