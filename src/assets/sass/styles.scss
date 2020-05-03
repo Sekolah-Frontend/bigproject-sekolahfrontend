@@ -1,3 +1,7 @@
+html {
+  font-family: sans-serif;
+}
+
 .book-detail-image {
   width: 356px;
   height: 511px;
@@ -9,7 +13,6 @@
 }
 
 .categories-font {
-  font-family: sans-serif;
   font-size: 24px;
   font-weight: bold;
   font-stretch: normal;
@@ -27,12 +30,12 @@
   height: 310px;
   box-shadow: 0 8px 16px 0 rgba(76, 91, 223, 0.35);
   background-color: #ffffff;
-  margin: 25px;
+  margin-right: 25px;
+  margin-top: 20px;
 
   .self-Development {
     width: 206px;
     height: 85px;
-    font-family: sans-serif;
     font-size: 24px;
     font-weight: bold;
     font-stretch: normal;
@@ -90,7 +93,6 @@
   li {
     line-height: 1.25;
     color: #ffffff;
-    font-family: sans-serif;
   }
 
   h4 {
