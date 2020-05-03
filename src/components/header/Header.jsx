@@ -1,22 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import Login from '../login/Login';
 
 export default function Header() {
+  const [modal, setModal] = useState(false);
+
   return (
     <>
       <header className='section custom-header'>
         <div className='container is-fluid'>
           <nav className='navbar' role='navigation' aria-label='main navigation'>
             <div className='navbar-brand is-4'>
-              <a className='navbar-item' href='#'>
+              <div className='navbar-item' href='#'>
                 <img src={`${process.env.PUBLIC_URL}/image/logoCilsy/Cilsyplus..png`} width='112' height='28' />
-              </a>
+              </div>
             </div>
 
             <div id='navbarBasicExample' className='navbar-menu'>
               <div className='navbar-start'>
                 <div className='navbar-item has-dropdown is-hoverable left-item'>
-                  <a className='navbar-link'>Categories</a>
+                  <div className='navbar-link'>Categories</div>
 
                   <div className='navbar-dropdown'>
                     <div className='navbar-item'>
@@ -42,7 +45,9 @@ export default function Header() {
                 </div>
                 <div className='navbar-item'>
                   <div className='buttons'>
-                    <a className='button is-primary'>Sign In</a>
+                    <div className='button is-primary' onClick={() => setModal(true)}>
+                      Sign In
+                    </div>
                   </div>
                 </div>
               </div>
@@ -50,6 +55,7 @@ export default function Header() {
           </nav>
         </div>
       </header>
+      {/* <Login modal={modal} /> */}
     </>
   );
 }

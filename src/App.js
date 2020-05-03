@@ -7,7 +7,7 @@ import Footer from './components/footer/Footer';
 // pages
 import Home from './pages/home/Home';
 import BookDetail from './pages/books/BookDetail';
-import Login from './/components/login/login';
+import Login from './components/login/Login';
 
 function App() {
   return (
