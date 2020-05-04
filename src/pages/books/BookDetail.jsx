@@ -2,7 +2,8 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import Breadcrumb from '../../components/breadcrumb/Breadcrumb';
 import BookInfo from '../../../src/components/book-info/BookInfo';
-import ItemProduct from '../../components/categories/ItemProduct';
+import dummyResponse from '../../dummy-data/item-product';
+import Listbook from '../../components/listbook/Listbook';
 
 const BookDetail = (props) => {
   const { match } = props;
@@ -75,8 +76,14 @@ const BookDetail = (props) => {
         <BookInfo />
       </div>
 
-      <div className='columns is-gapless'>
-        <ItemProduct />
+      <div className='columns'>
+        {dummyResponse.map((val) => {
+          return (
+            <>
+              <Listbook imgurl={val.imgurl} title={val.title} writer={val.writer} price={val.price} />
+            </>
+          );
+        })}
       </div>
 
       <div className='is-clearfix'>&nbsp;</div>
