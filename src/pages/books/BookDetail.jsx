@@ -64,6 +64,14 @@ const BookDetail = (props) => {
         <hr />
         <BookInfo />
       </div>
+      {/* batas */}
+      <div className='container columns'>
+        <div className='column'>1</div>
+        <div className='column'>2</div>
+        <div className='column'>3</div>
+        <div className='column'>4</div>
+        <div className='column'>5</div>
+      </div>
       <h1>Book Detail {match.params.id} </h1>
     </div>
   );
