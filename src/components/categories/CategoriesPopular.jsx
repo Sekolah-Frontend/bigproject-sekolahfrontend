@@ -7,7 +7,7 @@ export default function CategoriesPopular(props) {
         <h3 className='self-Development'>{props.categorie}</h3>
 
         <br />
-        <img className='line' src={props.line} />
+        <img className='line' alt='' src={props.line} />
       </div>
     </>
   );
