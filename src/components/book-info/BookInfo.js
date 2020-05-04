@@ -11,10 +11,10 @@ const BookInfo = () => {
       <div className='tabs'>
         <ul>
           <li onClick={() => setTabIndex(0)} className={clsx({ 'is-active': tabIndex === 0 })}>
-            <a>Description</a>
+            <a href='!#'>Description</a>
           </li>
           <li onClick={() => setTabIndex(1)} className={clsx({ 'is-active': tabIndex === 1 })}>
-            <a>Detail</a>
+            <a href='!#'>Detail</a>
           </li>
         </ul>
       </div>
