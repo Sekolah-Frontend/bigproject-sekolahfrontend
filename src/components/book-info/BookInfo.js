@@ -7,7 +7,7 @@ const BookInfo = () => {
   const [tabIndex, setTabIndex] = useState(0);
 
   return (
-    <div>
+    <div className='column is-full'>
       <div className='tabs'>
         <ul>
           <li onClick={() => setTabIndex(0)} className={clsx({ 'is-active': tabIndex === 0 })}>
@@ -25,6 +25,7 @@ const BookInfo = () => {
           <ProductDescription />
         </div>
       )}
+
       {tabIndex === 1 && (
         <div>
           <ProductDetail />
