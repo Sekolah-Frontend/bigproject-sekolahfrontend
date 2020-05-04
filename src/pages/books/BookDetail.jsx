@@ -61,13 +61,20 @@ const BookDetail = (props) => {
               </button>
               <button className='button margin-r-20 is-outlined'>add to cart</button>
               <button className='button is-primary'>buy now</button>
+              <img src='/image/rating-black/star.png' alt='' />
+              <img src={`${process.env.PUBLIC_URL}/image/rating-black/star.png`} alt='' />
+              <img src={`${process.env.PUBLIC_URL}/image/rating-black/star.png`} alt='' />
+              <img src={`${process.env.PUBLIC_URL}/image/rating-black/star.png`} alt='' />
+              <img src={`${process.env.PUBLIC_URL}/image/rating-black/star.png`} alt='' /> 4.9 (1.121 ratings by Goodreads)
             </div>
           </div>
         </div>
       </div>
+
       <div className='columns is-gapless'>
         <BookInfo />
       </div>
+
       <div className='columns is-gapless'>
         <ItemProduct />
       </div>
