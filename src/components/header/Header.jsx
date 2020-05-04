@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import { NavLink } from 'react-router-dom';
-import Login from '../login/Login';
+import Login from '../login/LoginPopup';
 
 export default function Header() {
   const [modal, setModal] = useState(false);
