@@ -38,10 +38,10 @@ export default function Footer() {
           <br />
           <ul>
             <li>
-              <img src='image/googleStore-AppelStore/Badge App Store.png' />
+              <img src='image/googleStore-AppelStore/Badge App Store.png' alt='' />
             </li>
             <li>
-              <img src='image/googleStore-AppelStore/Badge Google Play.png' />
+              <img src='image/googleStore-AppelStore/Badge Google Play.png' alt='' />
             </li>
           </ul>
         </div>
