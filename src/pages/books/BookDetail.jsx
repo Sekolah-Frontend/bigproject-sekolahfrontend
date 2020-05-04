@@ -2,6 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import Breadcrumb from '../../components/breadcrumb/Breadcrumb';
 import BookInfo from '../../../src/components/book-info/BookInfo';
+import ItemProduct from '../../components/categories/ItemProduct';
 
 const BookDetail = (props) => {
   console.log(props);
@@ -65,14 +66,9 @@ const BookDetail = (props) => {
         <BookInfo />
       </div>
       {/* batas */}
-      <div className='container columns'>
-        <div className='column'>1</div>
-        <div className='column'>2</div>
-        <div className='column'>3</div>
-        <div className='column'>4</div>
-        <div className='column'>5</div>
+      <div className='columns'>
+        <ItemProduct />
       </div>
-      <h1>Book Detail {match.params.id} </h1>
     </div>
   );
 };
