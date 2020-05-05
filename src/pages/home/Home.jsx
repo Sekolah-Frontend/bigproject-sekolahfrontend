@@ -19,38 +19,32 @@ const Home = () => {
         </div>
 
         <div className='columns'>
-          {dummyCategories.map((val) => (
-            <>
-              <CategoriesPopular category={val.category} line={val.line} />
-            </>
+          {dummyCategories.map((val, i) => (
+            <CategoriesPopular key={`category-book-${i}`} category={val.category} line={val.line} />
           ))}
         </div>
+
         <div className='columns'>
           <div className='column'>
             <h3 className='categories-font '>Best Selling Novel Books</h3>
           </div>
         </div>
+
         <div className='columns'>
-          {dummyResponse.map((val) => {
-            return (
-              <>
-                <Listbook imgurl={val.imgurl} title={val.title} writer={val.writer} price={val.price} />
-              </>
-            );
+          {dummyResponse.map((val, i) => {
+            return <Listbook key={`list-book-novel-${i}`} imgurl={val.imgurl} title={val.title} writer={val.writer} price={val.price} />;
           })}
         </div>
+
         <div className='columns'>
           <div className='column'>
             <h3 className='categories-font'>Best Selling Food and Drinks Books</h3>
           </div>
         </div>
+
         <div className='columns'>
-          {dummyResponse.map((val) => {
-            return (
-              <>
-                <Listbook imgurl={val.imgurl} title={val.title} writer={val.writer} price={val.price} />
-              </>
-            );
+          {dummyResponse.map((val, i) => {
+            return <Listbook key={`list-book-food-drinks-${i}`} imgurl={val.imgurl} title={val.title} writer={val.writer} price={val.price} />;
           })}
         </div>
       </div>

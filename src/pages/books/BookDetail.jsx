@@ -77,12 +77,8 @@ const BookDetail = (props) => {
       </div>
 
       <div className='columns'>
-        {dummyResponse.map((val) => {
-          return (
-            <>
-              <Listbook imgurl={val.imgurl} title={val.title} writer={val.writer} price={val.price} />
-            </>
-          );
+        {dummyResponse.map((val, i) => {
+          return <Listbook key={`related-book-${i}`} imgurl={val.imgurl} title={val.title} writer={val.writer} price={val.price} />;
         })}
       </div>
 
