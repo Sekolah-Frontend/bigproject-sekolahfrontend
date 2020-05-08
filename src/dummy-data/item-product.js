@@ -27,5 +27,12 @@ const dummyResponse = [
     price: 142000,
     discount_price: 10,
   },
+  {
+    imgurl: '/image/listBook/download.png',
+    title: 'Steal like artist jurnal',
+    writer: 'Austin Kleon',
+    price: 142000,
+    discount_price: 10,
+  },
 ];
 export default dummyResponse;
