@@ -4,7 +4,7 @@ import Login from '../login/LoginPopup';
 import Appendix from '../appendix/Appendix';
 
 export default function Header() {
-  const [modal, setModal] = useState(false);
+  const [showModal, setModal] = useState(false);
 
   return (
     <>
@@ -48,8 +48,8 @@ export default function Header() {
                 </div>
                 <div className='navbar-item'>
                   <div className='buttons'>
-                    <div className='button is-primary' onClick={() => setModal(true)}>
-                      Sign In
+                    <div className='button is-primary' show={showModal} onClick={() => setModal(true)}>
+                      Login
                     </div>
                   </div>
                 </div>
@@ -58,7 +58,6 @@ export default function Header() {
           </nav>
         </div>
       </header>
-      {/* <Login modal={modal} /> */}
     </>
   );
 }
