@@ -10,11 +10,11 @@ const Listbook = (props) => {
         <br />
         <h5>{props.price}</h5>
         <div>
-          <img src='image/rating-gold/star.png' alt='' />
-          <img src='image/rating-gold/star.png' alt='' />
-          <img src='image/rating-gold/star.png' alt='' />
-          <img src='image/rating-gold/star.png' alt='' />
-          <img src='image/rating-gold/star.png' alt='' />
+          <img src='/image/rating-gold/star.png' alt='' />
+          <img src='/image/rating-gold/star.png' alt='' />
+          <img src='/image/rating-gold/star.png' alt='' />
+          <img src='/image/rating-gold/star.png' alt='' />
+          <img src='/image/rating-gold/star.png' alt='' />
           <span>(24.039)</span>
         </div>
       </div>

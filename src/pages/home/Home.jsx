@@ -47,6 +47,8 @@ const Home = () => {
             return <Listbook key={`list-book-food-drinks-${i}`} imgurl={val.imgurl} title={val.title} writer={val.writer} price={val.price} />;
           })}
         </div>
+        <br />
+        <br />
       </div>
     </React.Fragment>
   );

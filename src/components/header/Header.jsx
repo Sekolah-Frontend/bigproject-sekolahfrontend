@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 // import { NavLink } from 'react-router-dom';
 import Login from '../login/LoginPopup';
+import Appendix from '../appendix/Appendix';
 
 export default function Header() {
   const [modal, setModal] = useState(false);
@@ -24,9 +25,9 @@ export default function Header() {
                   <div className='navbar-dropdown'>
                     <div className='navbar-item'>
                       <div className='columns is-multiline is-full'>
-                        <div className='column is-one-third'>abc</div>
-                        <div className='column is-one-third'>abc</div>
-                        <div className='column is-one-third'>abc</div>
+                        <div className='column is-one-third'>
+                          <Appendix />
+                        </div>
                       </div>
                     </div>
                   </div>
