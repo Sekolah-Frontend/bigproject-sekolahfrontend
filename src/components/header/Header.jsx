@@ -13,7 +13,9 @@ export default function Header() {
           <nav className='navbar' role='navigation' aria-label='main navigation'>
             <div className='navbar-brand is-4'>
               <div className='navbar-item' href='#'>
-                <img src={`${process.env.PUBLIC_URL}/image/logoCilsy/Cilsyplus..png`} width='112' height='28' alt='' />
+                <a href='http://localhost:3000/'>
+                  <img src={`${process.env.PUBLIC_URL}/image/logoCilsy/Cilsyplus..png`} width='112' height='28' alt='' />
+                </a>
               </div>
             </div>
 
