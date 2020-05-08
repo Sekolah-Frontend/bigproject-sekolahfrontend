@@ -16,7 +16,7 @@ const Appendix = () => {
     { key: 'S', values: ['Sports', 'Self Development', 'Social Sciences'] },
   ];
   return (
-    <div>
+    <div className='appendix-parent'>
       {menus.map((m) => {
         return <Appendixitem title={m.key} values={m.values} />;
       })}
