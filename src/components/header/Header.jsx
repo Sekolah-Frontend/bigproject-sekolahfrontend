@@ -41,7 +41,9 @@ export default function Header() {
 
               <div className='navbar-end'>
                 <div className='navbar-item'>
-                  <img src={`${process.env.PUBLIC_URL}/image/cartLogo/cart.png`} alt='' />
+                  <a href=''>
+                    <img src={`${process.env.PUBLIC_URL}/image/cartLogo/cart.png`} alt='' />
+                  </a>
                 </div>
                 <div className='navbar-item'>
                   <div className='vertical-line'></div>

@@ -9,29 +9,51 @@ export default function Footer() {
             <h4>Customer Service</h4>
             <br />
             <ul>
-              <li>Help Center</li>
-              <li>Payment</li>
-              <li>CilsyPay</li>
-              <li>Shipping</li>
-              <li>Contact Us</li>
+              <li>
+                <a href='#'>Help Center</a>
+              </li>
+              <li>
+                <a href='#'>Payment</a>
+              </li>
+              <li>
+                <a href='#'> CilsyPay</a>
+              </li>
+              <li>
+                <a href='#'> Shipping</a>
+              </li>
+              <li>
+                <a href='#'>Contact Us</a>
+              </li>
             </ul>
           </div>
           <div className='column'>
             <h4>About CilsyPlus Bookstore</h4>
             <br />
             <ul>
-              <li>About Us</li>
-              <li>Offline Store</li>
-              <li>Cooperation</li>
+              <li>
+                <a href='#'>About Us</a>
+              </li>
+              <li>
+                <a href='#'>Offline Store</a>
+              </li>
+              <li>
+                <a href='#'>Cooperation</a>
+              </li>
             </ul>
           </div>
           <div className='column'>
             <h4>Follow Us</h4>
             <br />
             <ul>
-              <li>Instagram</li>
-              <li>Twitter</li>
-              <li>Facebook</li>
+              <li>
+                <a href='#'> Instagram</a>
+              </li>
+              <li>
+                <a href='#'>Twitter</a>
+              </li>
+              <li>
+                <a href=''>Facebook</a>
+              </li>
             </ul>
           </div>
           <div className='column'>
